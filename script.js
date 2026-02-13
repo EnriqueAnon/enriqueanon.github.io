@@ -1,4 +1,4 @@
-function sayHello() {
-  const status = document.getElementById("status");
-  status.textContent = "Hello! Your JavaScript is working 🚀";
+function love() {
+  const msg = document.getElementById("message");
+  msg.innerHTML = "I love you. Always. ❤️";
 }
