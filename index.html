@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Welcome 👋</h1>
-    <p>Your website is now live using GitHub Pages.</p>
-  </header>
-
-  <main>
-    <section class="card">
-      <h2>About</h2>
-      <p>This is a starter template. You can build anything from here.</p>
-      <button onclick="sayHello()">Click Me</button>
+  <div class="container">
+    <section class="hero">
+      <h1>For You ❤️</h1>
+      <p>Happy Valentine’s Day</p>
     </section>
 
-    <section class="card">
-      <h2>Status</h2>
-      <p id="status">Waiting for action...</p>
+    <section class="glass card">
+      <h2>Dear Love,</h2>
+      <p>
+        I may not have expensive gifts,<br>
+        but I made this just for you.<br><br>
+        Thank you for staying, loving, and choosing me.<br>
+        You mean more to me than words can explain.
+      </p>
+      <span class="signature">— Yours, Glenn</span>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2026 Your Name</p>
-  </footer>
+    <section class="glass card">
+      <h2>Our Moments</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="">
+        <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659" alt="">
+      </div>
+      <p class="note">Replace these with our real memories 💕</p>
+    </section>
+
+    <section class="glass card center">
+      <h2>One More Thing...</h2>
+      <button onclick="love()">Tap Here ❤️</button>
+      <p id="message"></p>
+    </section>
+  </div>
 
   <script src="script.js"></script>
 </body>
