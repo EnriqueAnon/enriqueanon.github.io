@@ -91,4 +91,107 @@ button:hover {
   display: none;
   font-size: 1.1rem;
   color: #111;
+}* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #f5f5f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 60px 20px 80px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #a1a1a6;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 28px 30px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #d1d1d6;
+  margin-bottom: 12px;
+}
+
+.signature {
+  margin-top: 15px;
+  font-style: italic;
+  color: #a1a1a6;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  background: linear-gradient(135deg, #ff375f, #ff9f0a);
+  border: none;
+  color: #fff;
+  padding: 12px 26px;
+  font-size: 15px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 25px rgba(255,55,95,0.35);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 35px rgba(255,55,95,0.5);
+}
+
+.hidden {
+  display: none;
+  margin-top: 18px;
+  font-size: 15px;
+  color: #fff;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #6e6e73;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
