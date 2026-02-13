@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valentine 🤍</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -12,39 +12,32 @@
 
     <header class="hero">
       <h1>Assalamualaikum, Sayang <span>🤍</span></h1>
-      <p>Happy Valentine’s Day!</p>
+      <p>Happy Valentine’s Day</p>
     </header>
 
     <section class="card">
       <h2>Dear Princess,</h2>
 
       <p>
-        I know this isn’t a fancy gift.
-        But I wanted to make something just for you.
+        I know this isn’t a fancy gift. But I wanted to make something just for you.
         Something simple, but honest.
       </p>
 
       <p>
-        Thank you for staying with me.
-        For being patient.
-        For understanding me even when I don’t explain myself well.
+        Thank you for staying with me. For being patient. For understanding me even
+        when I don’t explain myself well.
       </p>
 
       <p>
-        You make my days calmer.
-        My worries quieter.
-        And my life brighter.
+        You make my days calmer, my worries quieter, and my life brighter.
       </p>
 
       <p>
-        Being with you feels natural.
-        Comfortable.
-        Safe.
+        Being with you feels natural. Comfortable. Safe.
       </p>
 
       <p>
-        I don’t know what the future holds,
-        but I know I want you in it.
+        I don’t know what the future holds, but I know I want you in it.
       </p>
 
       <p class="signature">Always yours, Enrique</p>
@@ -56,20 +49,22 @@
       <p>You matter to me more than you probably realize.</p>
 
       <p>
-        Every little thing you do,
-        every small effort,
-        every smile. I notice them all.
+        Every little thing you do, every small effort, every smile.
+        I notice them all.
       </p>
 
       <p>And I appreciate you. Truly.</p>
     </section>
 
     <section class="card center">
-      <h2>One Last Thing...</h2>
-      <button onclick="showLove()">Tap Here 🤍</button>
-      <p id="hiddenText" class="hidden">
-        I love you. More than words can say.
-      </p>
+      <h2 id="loveText">I love you ❤️</h2>
+
+      <div class="btn-group">
+        <button class="love-btn" onclick="loveMore()">I love you more!</button>
+        <button class="ok-btn" onclick="okClick()">Ok</button>
+      </div>
+
+      <p id="hiddenText" class="result"></p>
     </section>
 
   </main>
