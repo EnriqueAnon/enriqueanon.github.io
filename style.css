@@ -7,23 +7,15 @@
 
 body {
   min-height: 100vh;
-  background: #f5f5f7;
+  background: #ffffff;
   color: #1d1d1f;
-  overflow-x: hidden;
 }
 
-/* Soft Apple-style background */
-.bg {
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle at top, #fff6e5, #f5f5f7 60%);
-  z-index: -1;
-}
-
+/* Container */
 .container {
   max-width: 900px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 /* Hero */
@@ -33,9 +25,8 @@ body {
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
   font-weight: 700;
-  letter-spacing: -1px;
 }
 
 .hero p {
@@ -44,25 +35,21 @@ body {
   margin-top: 6px;
 }
 
-/* Glass card */
-.glass {
-  background: rgba(255,255,255,0.7);
-  backdrop-filter: blur(20px);
-  border-radius: 24px;
-  border: 1px solid rgba(0,0,0,0.05);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-}
-
+/* Apple glass cards */
 .card {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(20px);
+  border-radius: 26px;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
   padding: 32px;
   margin-bottom: 28px;
-  animation: fadeUp 0.8s ease both;
 }
 
+/* Text */
 .card h2 {
   font-size: 1.6rem;
   margin-bottom: 14px;
-  font-weight: 600;
 }
 
 .card p {
@@ -94,29 +81,28 @@ body {
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
-/* Center section */
+/* Button */
 .center {
   text-align: center;
 }
 
-/* Button */
 button {
   margin-top: 18px;
-  padding: 14px 34px;
+  padding: 14px 36px;
   border: none;
   border-radius: 999px;
-  background: linear-gradient(135deg, #ffd89b, #fcb045);
-  color: #1d1d1f;
+  background: linear-gradient(135deg, #ff9f0a, #ff375f);
+  color: white;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 6px 20px rgba(252,176,69,0.4);
+  box-shadow: 0 8px 25px rgba(255,55,95,0.35);
+  transition: all 0.2s ease;
 }
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(252,176,69,0.5);
+  box-shadow: 0 12px 30px rgba(255,55,95,0.45);
 }
 
 #message {
@@ -127,6 +113,10 @@ button:hover {
 }
 
 /* Animations */
+.card {
+  animation: fadeUp 0.8s ease both;
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -138,7 +128,7 @@ button:hover {
   }
 }
 
-/* Responsive */
+/* Mobile */
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 2.6rem;
